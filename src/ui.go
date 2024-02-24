@@ -295,7 +295,7 @@ func (ui *UI) display_chatmessage(msg chatmessage) {
 
 // A method of UI that displays a message recieved from self
 func (ui *UI) display_selfmessage(msg string) {
-	prompt := fmt.Sprintf("[blue]<%s>:[-]", ui.UserName)
+	prompt := fmt.Sprintf("[gray]<%s>:[-]", ui.UserName)
 	fmt.Fprintf(ui.messageBox, "%s %s\n", prompt, msg)
 }
 
